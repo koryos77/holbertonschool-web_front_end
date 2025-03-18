@@ -51,12 +51,6 @@
     box-sizing: border-box;
 }
 
-.row + .row {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -91,7 +85,7 @@ nav .nav-item {
 
 nav .nav-link {
     display: block;
-    padding: calc(0.5 * 1rem) calc(1 * 1rem);
+    padding: 0.5rem 1rem;
 }
 
 nav .nav-link:hover {
@@ -176,13 +170,24 @@ ul.row {
 .col-1-3 {
     width: 33.33%;
     float: left;
-    padding: calc(0.5 * 1rem);
+    padding: 0.5rem;
 }
 
 .col-1-2 {
     width: 50%;
     float: left;
-    padding: calc(0.5 * 1rem);
+    padding: 0.5rem;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
 }
 
 .container {
