@@ -20,7 +20,7 @@ a[href] {
     text-decoration: none;
 }
 
-a[href] {
+a[href]:visited {
     font-style: italic;
 }
 
