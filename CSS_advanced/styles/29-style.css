@@ -121,16 +121,11 @@ body {
     padding: 0.5rem 1rem;
 }
 
-.nav .nav-item .nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-}
-
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
 
-.nav .nav-item .nav-link::before {
+.nav .nav-link::before {
     content: '';
     position: absolute;
     top: 0;
@@ -138,7 +133,6 @@ body {
     background-color: var(--color-white);
     width: 0;
     height: 20%;
-    transition: width 0.3s ease;
 }
 
 .nav .nav-item:hover .nav-link::before {
